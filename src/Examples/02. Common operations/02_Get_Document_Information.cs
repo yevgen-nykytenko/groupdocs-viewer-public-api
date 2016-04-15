@@ -1,4 +1,5 @@
 ﻿using GroupDocs.Viewer.Config;
+using GroupDocs.Viewer.Domain;
 using GroupDocs.Viewer.Domain.Containers;
 using GroupDocs.Viewer.Domain.Options;
 using GroupDocs.Viewer.Handler;
@@ -38,6 +39,12 @@ namespace Examples
             Console.WriteLine("Name: {0}", documentInfo.Name);
             Console.WriteLine("PageCount: {0}", documentInfo.Pages.Count);
             Console.WriteLine("Size: {0}", documentInfo.Size);
+
+            foreach (PageData pageData in documentInfo.Pages)
+            {
+                Console.WriteLine("Page number: {0}", pageData.Number);
+                Console.WriteLine("Page name: {0}", pageData.Name);
+            }
         }
     }
 }

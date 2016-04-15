@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examples._06._Other_operations;
+using System;
 
 namespace Examples
 {
@@ -45,6 +46,20 @@ namespace Examples
             _06_06_Get_printable_html.Get_PrintableHtml();
             _06_06_Get_printable_html.Get_PrintableHtml_WithCss();
             _06_06_Get_printable_html.Get_PrintableHtml_WithWatermark();
+
+            _07_Show_grid_lines_for_Excel_files.InImageRepresentation();
+            _07_Show_grid_lines_for_Excel_files.InHtmlRepresentation();
+
+            _08_Multiple_pages_per_sheet_for_Excel_files.Run();
+
+            _09_Get_all_supported_document_formats.Run();
+
+            _10_Show_hidden_sheets_for_Excel_files.InImageRepresentation();
+            _10_Show_hidden_sheets_for_Excel_files.InHtmlRepresentation();
+
+            _11_How_to_create_and_use_file_with_localized_strings.Run();
+
+            _12_How_to_set_Words_Cells_and_Email_document_encoding.Run();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to exit");
